@@ -3,6 +3,104 @@
     margin: 0;
 }
 
-html, body{
-    
+html, body, h1, p, button{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+}
+
+:root{
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%)
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--White);
+}
+
+.btn-gradient{
+    color: var(--White);
+    background: linear-gradient(to right,var(--Lime-Green), var(--Bright-Cyan));
+    border: none;
+    padding: 0.85rem 1.85rem;
+    margin: 0.85rem 0;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    height: 4.4rem;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    padding: 0 0.75rem;
+}
+
+.nav-link:hover{
+    text-align:center;
+    background: linear-gradient(to right,var(--Lime-Green), var(--Bright-Cyan))
+      left 
+      bottom
+      var(--White)    
+      no-repeat; 
+    background-size:100% 5px;
+}
+
+.nav-link:hover a{
+    color: var(--Dark-Blue);
+}
+
+.nav-link a{
+    color: var(--Grayish-Blue);
+    text-decoration: none;
+    font-size: 0.85rem;
+    background-color: var(--White);
+}
+
+.btn-gradient:hover{
+    opacity: 0.7;
+}
+
+.container-introduction{
+    background-color: var(--Very-Light-Gray);
+    padding: 10rem 6rem;
+    z-index: -1;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-introduction .text{
+    max-width: 23rem;
+}
+
+.container-introduction .text h1{
+    font-size: 2.85rem;
+    font-weight: 300;
+    color: var(--Dark-Blue);
+}
+
+.container-introduction .text p{
+    color: var(--Grayish-Blue);
+    padding: 1.5rem 0;
+    line-height: 24px;
+    font-size: 0.9rem;
+}
+
+.container-introduction img{
+    position: absolute;
+    top: -39%;
+    right: -33%;
+    z-index: -3;
 }
