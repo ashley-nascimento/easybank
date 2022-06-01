@@ -6,6 +6,7 @@
 html, body, h1, p, button{
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
+    overflow-x: hidden;
 }
 
 :root{
@@ -23,6 +24,14 @@ html, body, h1, p, button{
     justify-content: space-around;
     align-items: center;
     background: var(--White);
+    position: relative;
+    z-index: 1;
+}
+
+.mockups{
+    position: absolute;
+    right: -10%;
+    top: -7%;
 }
 
 .btn-gradient{
@@ -104,3 +113,45 @@ html, body, h1, p, button{
     right: -33%;
     z-index: -3;
 }
+
+.container-benefits{
+    background-color: var(--Light-Grayish-Blue);
+    padding: 6rem;
+}
+
+.container-benefits h2{
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: var(--Dark-Blue);
+    margin-bottom: 2rem;
+}
+
+.container-benefits p{
+    color: var(--Grayish-Blue);
+    line-height: 24px;
+    font-size: 0.9rem;
+}
+
+.col img{
+    width: 4rem;
+    margin: 1.8rem 0;
+}
+
+.col h6{
+    font-size: 1.15rem;;
+    font-weight: 400;
+    color: var(--Dark-Blue);
+    padding-bottom: 1rem;
+}
+
+.col{
+    padding-right: 1rem;
+    margin-top: 2rem;
+}
+
+
+.row{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
