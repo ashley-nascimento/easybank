@@ -132,12 +132,12 @@ html, body, h1, p, button{
     font-size: 0.9rem;
 }
 
-.col img{
+.container-benefits .col img{
     width: 4rem;
     margin: 1.8rem 0;
 }
 
-.col h6{
+.container-benefits .col h6{
     font-size: 1.15rem;;
     font-weight: 400;
     color: var(--Dark-Blue);
@@ -149,9 +149,57 @@ html, body, h1, p, button{
     margin-top: 2rem;
 }
 
-
 .row{
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
 
+.container-articles{
+    background-color: var(--Very-Light-Gray);
+    padding: 6rem;
+}
+
+.container-articles .col img{
+    height: 10rem;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+.container-articles h2{
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: var(--Dark-Blue);
+    margin-bottom: 2rem;
+}
+
+.card{
+    background-color: var(--White)
+}
+
+.autor{
+    color: var(--Grayish-Blue);
+    font-size: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.title-articles{
+    padding: 0 1.5rem;
+}
+
+.title-articles a{
+    color: var(--Dark-Blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.title-articles a:hover{
+    color: var(--Lime-Green);
+    text-decoration: none;
+}
+
+.text-articles{
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    color: var(--Grayish-Blue);
+    font-size: 0.7rem;
+}
