@@ -203,3 +203,8 @@ html, body, h1, p, button{
     color: var(--Grayish-Blue);
     font-size: 0.7rem;
 }
+
+footer{
+    background-color: var(--Dark-Blue);
+    color: var(--White);
+}
