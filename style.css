@@ -447,8 +447,26 @@
         height: 13rem;
     }
 
+    .footer {
+        padding: 1rem 1.5rem;
+    }
+
     .footer-row {
         flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-row-main {
+        gap: 30px;
+    }
+
+    .footer-row-column {
+        text-align: center;
+    }
+
+    .footer-row-end {
+        align-items: center;
     }
 
 }
