@@ -86,6 +86,13 @@
     opacity: 0.7;
 }
 
+.navigation-bar-hamburguer{
+    display: none;
+    margin: 0.85rem 0;
+    background-color: var(--White);
+    border: none;
+}
+
 .content-introduction{
     background-color: var(--Very-Light-Gray);
     padding: 10rem 6rem;
@@ -351,4 +358,80 @@
 
 .footer-attribution-link:hover{
     color: var(--Lime-Green);
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 768px) {
+    .navigation-bar{
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navigation-bar-menu, .navigation-bar-button{
+        display: none;
+    }
+
+    .navigation-bar-hamburguer{
+        display: block;
+    }
+    .content-introduction {
+        padding: 20rem 1.5rem 5rem 1.5rem;
+    }
+
+    .content-introduction-images-background {
+        display: none;
+    }
+
+    .content-introduction-images-mockups {
+        position: absolute;
+        top: -17%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        max-width: 85%;
+        margin: auto;
+    }
+
+    .content-introduction-text-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .content-introduction-text-description {
+        text-align: center;
+    }
+
+    .content-introduction-text-button {
+        margin: 0.85rem auto;
+        display: block;
+    }
+
+    .content-articles-row {
+        flex-wrap: wrap;
+    }
+
+    .content-benefits {
+        padding: 6rem 1.5rem;
+    }
+
+    .content-benefits-text{
+        text-align: center;
+    }
+    
+    .content-benefits-row {
+        flex-wrap: wrap;
+    }
+
+    .content-benefits-row-column {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-row {
+        flex-wrap: wrap;
+    }
+
 }
