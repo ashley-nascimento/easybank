@@ -430,6 +430,23 @@
         text-align: center;
     }
 
+    .content-articles {
+        padding: 6rem 1.5rem;
+    }
+    
+
+    .content-articles-title {
+        text-align: center;
+    }
+
+    .content-articles-row {
+        gap: 0;
+    }
+
+    .content-articles-row-column-card-image {
+        height: 13rem;
+    }
+
     .footer-row {
         flex-wrap: wrap;
     }
