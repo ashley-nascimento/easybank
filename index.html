@@ -31,13 +31,33 @@
         </div>
 
         <button class="navigation-bar-button">Request Invite</button>    
-        <button class="navigation-bar-hamburguer"><img src="images/icon-hamburger.svg" alt="Button Hamburger"></button>    
+        <button class="navigation-bar-hamburguer" onclick="Menu()"><img id="mobile-menu-icon" src="images/icon-hamburger.svg" alt="Button Hamburger"></button>    
       </nav>
     </header>
 
+    <nav id="mobile-menu" class="navigation-bar-mobile">
+      <div id="mobile-menu-background" class="navigation-bar-mobile-background"></div>
+      <div id="mobile-menu-links" class="navigation-bar-mobile-menu">
+        <div class="navigation-bar-mobile-menu-link">   
+          <a class="navigation-bar-mobile-menu-link-anchor" href="#">Home</a>
+        </div>
+        <div class="navigation-bar-mobile-menu-link"> 
+          <a class="navigation-bar-mobile-menu-link-anchor" href="#">About</a>
+        </div>
+        <div class="navigation-bar-mobile-menu-link"> 
+          <a class="navigation-bar-mobile-menu-link-anchor" href="#">Contact</a>
+        </div>
+        <div class="navigation-bar-mobile-menu-link"> 
+          <a class="navigation-bar-mobile-menu-link-anchor" href="#">Blog</a>
+        </div>
+        <div class="navigation-bar-mobile-menu-link"> 
+          <a class="navigation-bar-mobile-menu-link-anchor" href="#">Careers</a>
+        </div>
+      </div>
+    </nav>
+
     <main class="content">
       <section class="content-introduction">
-
         <div class="content-introduction-images">
           <img class="content-introduction-images-mockups" src="images/image-mockups.png" alt="Mockups">
           <img class="content-introduction-images-background" src="images/bg-intro-desktop.svg" alt="Bg-Intro">
@@ -198,3 +218,26 @@
     </footer>
   </body>
 </html>
+
+<script type="text/javascript">
+
+  function Menu() {
+    var contentMenu = document.getElementById("mobile-menu");
+    var backgroundMenu = document.getElementById("mobile-menu-background");
+    var linkMenu = document.getElementById("mobile-menu-links");
+    var imageMenu  = document.getElementById("mobile-menu-icon")
+    
+    if (contentMenu.style.display === "block") {
+      contentMenu.style.display = "none";
+      backgroundMenu.style.opacity = "0";
+      linkMenu.style.transform = "scale(0)";
+      imageMenu.src = "/images/icon-hamburger.svg"
+    } else {
+      contentMenu.style.display = "block";
+      backgroundMenu.style.opacity = "1";
+      linkMenu.style.transform = "scale(1)";
+      imageMenu.src = "/images/icon-close.svg"
+
+    }
+  }
+</script>
